@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>西邮成绩</title>
+    <meta name="description" content="成绩，西邮成绩，西邮成绩榜，西邮3G实验室，西安邮电大学">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-startup-image" href="img/loading.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114X114" href="img/iphone.png">
+    <link rel="apple-touch-icon-precomposed" href="img/android.png">
+
+    <!--下面注释的内容是直接引用CDN（内容交付网络）上面的资源，因为那样加载速度会更快-->
+    <!--
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    -->
+    <link rel="stylesheet" href="css/themes/jquery.mobile-1.4.2.css"/>
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">亲，您还在使用着 <strong>过时的</strong> 浏览器. 请您
+    <a href="http://browsehappy.com/">更新</a> 一下吧以使您得到更好的体验哦！
+</p>
+<![end if]-->
+
+<!--成绩页面-->
+<div data-role="page" data-title="西邮成绩">
+    <div data-role="header" data-position="fixed" class="header">
+        <a href="#" data-icon="home" data-inline="true" class="controlBtn">主页</a>
+
+        <h1><span class="name"></span></h1>
+        <a data-icon="back" data-inline="true" class="controlBtn" data-rel="back">退出</a>
+    </div>
+    <div data-role="content" class="content">
+        <h3>您的成绩</h3>
+
+        <div data-role="collapsible-set" class="details">
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <span class="footTitle">Copyright &copy; 2014 西邮移动开发应用俱乐部 All rights reserved.</span>
+    </div>
+</div>
+
+<!--成绩详情-->
+<div data-role="dialog" data-title="成绩详情" id="detail">
+    <div data-role="header">
+        <h1>成绩详情</h1>
+    </div>
+    <div data-role="content">
+        <div class="scoreDetail">
+
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <span class="footTitle">Copyright &copy; 2014 西邮移动开发应用俱乐部.</span>
+    </div>
+</div>
+
+<!--下面注释的内容是直接引用CDN（内容交付网络）上面的资源，因为那样加载速度会更快-->
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+-->
+
+<!--下面的内容是加载页面要用的js文件-->
+<script src="js/vendor/jquery-1.11.1.min.js"></script>
+<script src="js/vendor/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/vendor/jquery.cookie.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/mine/base.js"></script>
+<script src="js/mine/score.js"></script>
+<script src="js/main.js"></script>
+
+
+<!-- 下面的注释是引用谷歌的站点统计分析工具的js代码-->
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>-->
+</body>
+</html>

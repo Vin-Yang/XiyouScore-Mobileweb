@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>西邮成绩</title>
+    <meta name="description" content="成绩，西邮成绩，西邮成绩榜，西邮3G实验室，西安邮电大学">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-startup-image" href="img/loading.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114X114" href="img/iphone.png">
+    <link rel="apple-touch-icon-precomposed" href="img/android.png">
+
+    <!--下面注释的内容是直接引用CDN（内容交付网络）上面的资源，因为那样加载速度会更快-->
+    <!--
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    -->
+    <link rel="stylesheet" href="css/themes/jquery.mobile-1.4.2.css"/>
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">亲，您还在使用着 <strong>过时的</strong> 浏览器. 请您
+    <a href="http://browsehappy.com/">更新</a> 一下吧以使您得到更好的体验哦！
+</p>
+<![end if]-->
+
+<!--登录页面-->
+<div data-role="page" data-title="西邮成绩-登录" id="login">
+    <div data-role="header" data-position="fixed">
+        <h1>
+            <span class="logo"><img src="img/logoScore.png" width="35" height="35"> 西邮成绩</span>
+        </h1>
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#login" class="focus" data-transition="slide">登录</a></li>
+                <li><a href="#aboutPage" data-transition="slide">关于</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content" class="content">
+        <div class="login" data-role="fieldcontain">
+            <form id="loginForm">
+                <p>
+                    <label for="username" class="username"> 用户名: </label><input id="username" name="username"
+                                                                                required="required" type="text"
+                                                                                placeholder=""/>
+                </p>
+
+                <p>
+                    <label for="password" class="password">密码:</label>
+                    <input id="password" name="password" require="required" type="password" placeholder=""/>
+
+                <p class="keepLogin">
+                    <label for="loginkeeping">记住密码</label>
+                    <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" checked="true"/>
+                </p>
+
+                <p class="submit">
+                    <input type="button" value="登录"/>
+                </p>
+            </form>
+        </div>
+
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <span class="footTitle">Copyright &copy; 2014 西邮移动开发应用俱乐部 All rights reserved.</span>
+    </div>
+</div>
+
+<!--关于页面-->
+<div data-role="page" id="aboutPage" data-title="西邮成绩-关于">
+    <div data-role="header" data-position="fixed">
+        <h1>
+            <span class="logo"><img src="img/logoScore.png" width="35" height="35"> 西邮图书馆</span>
+        </h1>
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#login" data-transition="slide">登录</a></li>
+                <li><a href="#aboutPage" class="focus" data-transition="slide">关于</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content" class="content">
+        <div class="p10">
+            <h4 class="yellow fb">产品</h4>
+
+            <p class="yellow f14">
+                1.名称:西邮成绩-移动web应用<br><br>
+                2.功能:提供西邮成绩查询，特别是可以看平时以及期中考试的成绩哦！<br><br>
+                3.优点:绝对跨平台，只需要一个浏览器，在各种手机平台（PC）都能使用<br><br>
+                4.更多产品: <br><br>●<a href="http://lib.xiyoumobile.com" target="_blank">西邮图书馆</a>（可以在手机上续借图书哦！）
+                <br><br>●<a href="http://windowsphone.com/s?appid=becf5496-8127-4c56-8917-bc855f70d797" target="_blank">西邮图书馆-WP客户端</a>（高大上！）
+                <br><br>●<a href="http://windowsphone.com/s?appid=cc30b48f-f85f-4c03-85c8-043c4ba030a3" target="_blank">通讯中心-WP客户端</a>（吊炸天！）
+                <br><br>●<a href="http://windowsphone.com/s?appid=3671a7bf-0f74-4470-afc0-c81ee2ef56ec" target="_blank">西邮成绩-WP客户端</a>（必须牛！）
+            </p>
+            <h4 class="blue fb">使用</h4>
+
+            <p class=" blue f14">
+                1.打开任意手机浏览器(PC浏览器也可以)<br><br>
+                2.输入http://cj.xiyoumobile.com <br><br>
+                3.开始使用
+            </p>
+            <h4 class="y_books-body-deadline fb">声明</h4>
+
+            <p class="y_books-body-deadline f14">
+                1.本程序使用完全免费<br><br>
+                2.对于非法破解使用本应用的行为，将依法追究其法律责任<br><br>
+                3.本程序版权及最终解释权归西邮移动应用开发俱乐部所有
+
+            </p>
+            <h4 class="fb">联系我们</h4>
+
+            <p class="f14">
+                1.实验室官网: <a href="http://xiyoumobile.com" target="_blank">西邮移动应用开发俱乐部</a><br><br>
+                2.新浪官方微博: <a href="http://weibo.com/u/2794801680" target="_blank">西邮移动应用开发俱乐部</a><br><br>
+                3.人人公共主页: <a href="http://3g.renren.com/profile.do?id=601470193" target="_blank">西邮移动应用开发俱乐部</a><br><br>
+                4.微信公众平台: <a>西邮3G实验室</a>
+            </p>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <span class="footTitle">Copyright &copy; 2014 西邮移动开发应用俱乐部 All rights reserved.</span>
+    </div>
+</div>
+
+<!--下面注释的内容是直接引用CDN（内容交付网络）上面的资源，因为那样加载速度会更快-->
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+-->
+
+<!--下面的内容是加载页面要用的js文件-->
+<script src="js/vendor/jquery-1.11.1.min.js"></script>
+<script src="js/vendor/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/vendor/jquery.cookie.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/mine/base.js"></script>
+<script src="js/mine/score.js"></script>
+<script src="js/index.js"></script>
+
+
+<!-- 下面的注释是引用谷歌的站点统计分析工具的js代码-->
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>-->
+</body>
+</html>

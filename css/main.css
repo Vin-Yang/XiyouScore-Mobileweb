@@ -1,0 +1,105 @@
+/* ======================================
+   自己的css样式
+   ====================================== */
+
+/*=index.html页面的css样式设置=*/
+/*.login start.*/
+.login {
+    padding: 0 10px;
+}
+
+.login h3 {
+    text-align: center;
+    color: #3388cc;
+    margin-bottom: 30px;
+}
+
+.login p, input {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.keepLogin input, .keepLogin label {
+    display: inline-block;
+    font-size: 12px;
+}
+
+/*...scoreList start...*/
+.content {
+    padding: 5px;
+}
+
+.content h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-body {
+    padding: 5px !important;
+}
+
+.ui-collapsible-content {
+    padding: 5px 3px 5px 5px;
+}
+
+.scoreList {
+    border-radius: 5px;
+    padding: 5px;
+    background: #f0f0f0;
+    font-size: 14px;
+    margin: 0 2px 0 0;
+}
+
+.scoreList h4 {
+    padding: 0;
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.scoreList-info {
+    background: #3388CC;
+    color: #ffffff;
+    padding: 0 4px;
+    text-shadow: none;
+    margin: 0 0 2px;
+}
+
+.scoreList-info p {
+    margin: 0;
+    padding: 2px 0;
+}
+
+.scoreList-info p a {
+    color: #ffffff !important;
+}
+
+.scoreDetail h3 {
+    margin: 5px 0 10px;
+}
+
+.scoreDetail p {
+    margin: 0;
+    padding: 5px 0 0;
+}
+
+.scoreDetail hr {
+    margin: 5px 0;
+}
+
+/*...bookList end...*/
+
+/*==#circulation部分==*/
+.green {
+    color: #52B54C;
+}
+
+.yellow {
+    color: #E5A85E;
+}
+.blue{
+    color: #3388CC;
+}
+/*==#abstract部分==*/
+
+/*==#related部分==*/
+
